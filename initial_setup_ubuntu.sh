@@ -42,6 +42,8 @@ APT_PACKAGES=(
   php-xml
   php-zip
   obs-studio
+  gimp
+  inkscape
   ares
 )
 SNAP_PACKAGES=(
