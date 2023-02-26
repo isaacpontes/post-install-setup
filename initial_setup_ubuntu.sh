@@ -27,11 +27,10 @@ APT_PACKAGES=(
   curl
   git
   wget
-  ares
   ffmpeg
-  obs-studio
-  mysql-server
   openssl
+  sqlite3
+  mysql-server
   php
   php-common
   php-bcmath
@@ -42,6 +41,8 @@ APT_PACKAGES=(
   php-tokenizer
   php-xml
   php-zip
+  obs-studio
+  ares
 )
 SNAP_PACKAGES=(
   chromium
@@ -97,7 +98,7 @@ install_asdf_and_languages() {
   echo -e "${GREEN}[INFO] - Instalando asdf-vm, Node.js e Ruby${NO_COLOR}"
   if [ ! -d "$HOME/.asdf" ]; then
     git clone https://github.com/asdf-vm/asdf.git ~/.asdf
-    echo ". $HOME/.asdf/asdf.sh" >> ~/.bashrc
+    echo "\n. $HOME/.asdf/asdf.sh" >> ~/.bashrc
     echo ". $HOME/.asdf/completions/asdf.bash" >> ~/.bashrc
     echo "----------\n[DONE] - asdf-vm\n----------"
   fi
